@@ -12,7 +12,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "lefuturiste\\slim3_multiLanguage\\": "src/"
+      "slim3_multiLanguage\\": "src/"
     }
   }
 }

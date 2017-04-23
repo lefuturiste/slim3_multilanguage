@@ -1,5 +1,5 @@
 <?php
-namespace lefuturiste\slim3_multilanguage;
+namespace slim3_multilanguage;
 
 /**
  * STAILang Class
