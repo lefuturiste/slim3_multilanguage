@@ -1,0 +1,18 @@
+{
+  "name": "lefuturiste/slim3_multilanguage",
+  "description": "Multilanguage middleware class for slim framework 3",
+  "type": "library",
+  "keywords": ["slim3", "multilanguage", "middleware"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Le_Futuriste",
+      "email": "contact@lefuturiste.fr"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "slim3_multiLanguage\\": "src"
+    }
+  }
+}
