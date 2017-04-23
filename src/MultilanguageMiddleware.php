@@ -1,5 +1,5 @@
 <?php
-namespace lefuturiste\slim3_multiLanguage;
+namespace lefuturiste\slim3_multilanguage;
 
 use Slim\Http\Request;
 
