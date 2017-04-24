@@ -82,3 +82,5 @@ $app->group('/{lang:[a-z]{2}}', function () use ($container){
 $app->run();
 ```
 
+A complete example [Here](https://github.com/lefuturiste/slim3_multilanguage_example).
+
