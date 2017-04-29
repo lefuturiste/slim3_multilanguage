@@ -28,7 +28,7 @@ class MultilanguageMiddleware {
     {
         $defaultConfig = [
             'twig' => null,
-            'langFolder' => "/langs/"
+            'langFolder' => "../lang/"
         ];
         //on constitue la nouvelle config en regroupant la config par défault et celle donné par l'utilisateur
         $config = array_merge($defaultConfig, $config);
@@ -76,6 +76,10 @@ class MultilanguageMiddleware {
                 //on set un nouveau container 'lang' qui retourne la chaine de caractère de la langue voulue (ex: "fr")
                 $this->container['lang'] = function (){
                     return $this->requestLang;
+                };
+                //on enregistre le dictrionnaire dans le container "dictionary")
+                $this->container['dictionary'] = function () use($langArray){
+                    return $langArray;
                 };
 
                 return $next($request, $response);
