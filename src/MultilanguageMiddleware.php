@@ -59,7 +59,7 @@ class MultilanguageMiddleware {
 
         //si le format de l'url est bon
        
-        if ($this->requestUrl == '/' || empty($this->requestUrl) || preg_match("/[a-z]{2}$|^[a-z]{2}\//",
+        if ($this->requestUrl == '/' || empty($this->requestUrl) || preg_match("/[a-z]{2}/"),
                 $this->requestUrl, $matches, PREG_OFFSET_CAPTURE, 0)){
             //si la langue demandé dans l'url n'est pas vide et que elle existe on la charge
             if (!empty($this->requestLang) && $this->ifLangExist($this->requestLang) == true){
